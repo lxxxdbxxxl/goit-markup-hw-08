@@ -1,0 +1,169 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 252px;
+  margin: 0 auto;
+  background: #2f303a;
+}
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.address-box {
+  margin-right: 70px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.address-list {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address-location {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+
+.address-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+
+.join-box {
+  margin-right: 93px;
+}
+
+.join-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.join-scroll {
+  display: flex;
+}
+
+.join-list {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+  }
+}
+
+.join-icon {
+  fill: currentColor;
+}
+
+.subscription-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscription-box {
+  display: flex;
+}
+
+.subscription-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  background: var(--accent);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscription-form {
+  margin-right: 12px;
+}
+
+.subscription-input {
+  min-width: 380px;
+
+  padding: 15px 16px;
+
+  border-radius: 4px;
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscription-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
