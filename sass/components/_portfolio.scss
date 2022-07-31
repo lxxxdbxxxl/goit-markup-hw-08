@@ -11,7 +11,7 @@
 }
 
 .portfolio-filtr {
-  & :not(:last-child) {
+  &:not(:last-child) {
     margin-right: 8px;
   }
 }
@@ -67,7 +67,7 @@
   }
 }
 
-.portfolio-list .portfolio-list .portfolio-item {
+.portfolio-item {
   padding: 20px 24px;
 }
 
