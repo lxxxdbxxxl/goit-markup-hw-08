@@ -56,13 +56,6 @@ h6 {
   overflow: hidden;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 :root {
   --primary-text-color: #757575;
   --heading-main-color: #212121;
@@ -76,6 +69,27 @@ body {
 
 .center {
   text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -467,13 +481,9 @@ body {
   background: #2f303a;
 }
 
-.container-footer {
+.footer-box {
   display: flex;
   align-items: baseline;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .address-box {
