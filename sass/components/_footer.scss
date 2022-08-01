@@ -3,39 +3,29 @@
   padding-bottom: 60px;
 
   background: #2f303a;
-  text-align: center;
-
-  @media screen and (min-width: 1200px) {
-    height: 252px;
-  }
 }
 
-.footer-box {
+.footer-position {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
+  gap: 60px;
+
   @media screen and (min-width: 768px) {
-    align-items: baseline;
+    justify-content: space-evenly;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: baseline;
   }
 }
 
-.footer-item {
-  @media screen and (min-width: 768px) {
-    width: 50%;
-  }
-}
-
-.address-box {
-  margin-bottom: 60px;
+.footer-box {
+  text-align: center;
 
   @media screen and (min-width: 1200px) {
-    margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -82,14 +72,8 @@
   }
 }
 
-.join-box {
-  margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-  }
-}
-
 .join-title {
+  text-align: center;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -98,6 +82,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .join-scroll {
@@ -140,17 +128,20 @@
   color: #ffffff;
 
   text-align: center;
-}
 
-.subscription-box {
   @media screen and (min-width: 1200px) {
-    display: flex;
+    text-align: start;
   }
 }
 
-.footer-form {
-  display: flex;
-  justify-content: center;
+.subscription-box {
+}
+
+.footer-button {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .subscription-btn {
@@ -174,14 +165,7 @@
   margin: 0 auto;
 }
 
-.subscription-form {
-  @media screen and (min-width: 1200px) {
-    margin-right: 12px;
-  }
-}
-
 .subscription-input {
-  width: 400px;
   margin-bottom: 20px;
 
   padding: 15px 16px;
@@ -192,8 +176,16 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 400px;
   }
 }
 
