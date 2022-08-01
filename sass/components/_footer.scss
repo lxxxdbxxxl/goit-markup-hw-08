@@ -1,18 +1,28 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  height: 252px;
-  margin: 0 auto;
+
   background: #2f303a;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    height: 252px;
+  }
 }
 
 .footer-box {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .address-box {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-logo {
@@ -59,7 +69,10 @@
 }
 
 .join-box {
-  margin-right: 93px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .join-title {
@@ -75,6 +88,7 @@
 
 .join-scroll {
   display: flex;
+  justify-content: center;
 }
 
 .join-list {
@@ -118,7 +132,9 @@
 }
 
 .subscription-box {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscription-btn {
@@ -139,14 +155,18 @@
   background: var(--accent);
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
 }
 
 .subscription-form {
-  margin-right: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 .subscription-input {
-  min-width: 380px;
+  width: 100%;
+  margin-bottom: 20px;
 
   padding: 15px 16px;
 

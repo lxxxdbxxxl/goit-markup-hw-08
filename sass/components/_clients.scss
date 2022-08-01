@@ -1,26 +1,50 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-scroll {
   display: flex;
+
+  margin: -15px;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .clients-list {
-  &:not(:last-child) {
-    margin-right: 30px;
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients-link {
@@ -28,8 +52,6 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
   color: #afb1b8;
   border: 1px solid var(--primary-text-color);
@@ -41,6 +63,11 @@
   &:focus {
     color: var(--accent);
     border-color: var(--accent);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
   }
 }
 
