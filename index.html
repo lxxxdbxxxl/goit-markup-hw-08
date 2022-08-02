@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__marking">
           <nav class="site-nav">
@@ -63,7 +63,7 @@
           </ul>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- hero -->
@@ -133,29 +133,57 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-scroll">
             <li class="work-list">
-              <a class="worl-link" href=""
-                ><img class="work-item" src="./images/img1.jpg" alt="разработка сайтов" width="370"
-              /></a>
+              <a class="worl-link" href="">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/work/work-1-370.jpg 1x, ./images/work/work-1-370@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work-item"
+                    src="./images/img1.jpg"
+                    alt="разработка сайтов"
+                    width="370"
+                  />
+                </picture>
+              </a>
               <p class="work-text">Десктопные приложения</p>
             </li>
             <li class="work-list">
-              <a class="worl-link" href=""
-                ><img
-                  class="work-item"
-                  src="./images/img2.jpg"
-                  alt="разработка приложений"
-                  width="370"
-              /></a>
+              <a class="worl-link" href="">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/work/work-2-370.jpg 1x, ./images/work/work-2-370@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work-item"
+                    src="./images/img2.jpg"
+                    alt="разработка приложений"
+                    width="370"
+                  />
+                </picture>
+              </a>
               <p class="work-text">Мобильные приложения</p>
             </li>
             <li class="work-list">
-              <a class="worl-link" href=""
-                ><img
-                  class="work-item"
-                  src="./images/img3.jpg"
-                  alt="разработка макетов"
-                  width="370"
-              /></a>
+              <a class="worl-link" href="">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/work/work-3-370.jpg 1x, ./images/work/work-3-370@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work-item"
+                    src="./images/img3.jpg"
+                    alt="разработка макетов"
+                    width="370"
+                  />
+                </picture>
+              </a>
               <p class="work-text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -168,7 +196,44 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-scroll">
             <li class="taem-list">
-              <img class="team-photo" src="./images/igor.jpg" alt="Игорь" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-450px/team-one-450.jpg    1x,
+                    ./images/team/team-450px/team-one-450@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-354px/team-one-354.jpg    1x,
+                    ./images/team/team-354px/team-one-354@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-270px/team-one-270.jpg    1x,
+                    ./images/team/team-270px/team-one-270@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team-photo"
+                  src="./images/igor.jpg"
+                  alt="Игорь"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="team-persom">Игорь Демьяненко</h3>
               <p class="team-text">Product Designer</p>
               <ul class="team-link">
@@ -203,7 +268,44 @@
               </ul>
             </li>
             <li class="taem-list">
-              <img class="team-photo" src="./images/olga.jpg" alt="Ольга" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-450px/team-two-450.jpg    1x,
+                    ./images/team/team-450px/team-two-450@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-354px/team-two-354.jpg    1x,
+                    ./images/team/team-354px/team-two-354@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-270px/team-two-270.jpg    1x,
+                    ./images/team/team-270px/team-two-270@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team-photo"
+                  src="./images/olga.jpg"
+                  alt="Ольга"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="team-persom">Ольга Репина</h3>
               <p class="team-text">Frontend Developer</p>
               <ul class="team-link">
@@ -238,7 +340,44 @@
               </ul>
             </li>
             <li class="taem-list">
-              <img class="team-photo" src="./images/nikolay.jpg" alt="Николай" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-450px/team-three-450.jpg    1x,
+                    ./images/team/team-450px/team-three-450@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-354px/team-three-354.jpg    1x,
+                    ./images/team/team-354px/team-three-354@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-270px/team-three-270.jpg    1x,
+                    ./images/team/team-270px/team-three-270@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team-photo"
+                  src="./images/nikolay.jpg"
+                  alt="Николай"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="team-persom">Николай Тарасов</h3>
               <p class="team-text">Marketing</p>
               <ul class="team-link">
@@ -273,7 +412,44 @@
               </ul>
             </li>
             <li class="taem-list">
-              <img class="team-photo" src="./images/mihail.jpg" alt="Михаил" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-450px/team-four-450.jpg    1x,
+                    ./images/team/team-450px/team-four-450@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-354px/team-four-354.jpg    1x,
+                    ./images/team/team-354px/team-four-354@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-270px/team-four-270.jpg    1x,
+                    ./images/team/team-270px/team-four-270@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team-photo"
+                  src="./images/mihail.jpg"
+                  alt="Михаил"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="team-persom">Михаил Ермаков</h3>
               <p class="team-text">UI Designer</p>
               <ul class="team-link">
