@@ -19,3 +19,76 @@
     display: none;
   }
 }
+
+.mobil-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+
+  padding: 40px;
+  max-width: 480px;
+}
+
+.mobil-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.mobil-link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.mobil-link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.mobil-link-soc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.mobil-soc-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mobil-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 64px;
+}
+
+.mobil-scroll {
+  margin-bottom: 250px;
+}
+
+.mobil-scroll-list {
+}
