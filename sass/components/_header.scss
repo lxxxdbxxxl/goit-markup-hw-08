@@ -4,8 +4,10 @@
 
 .header__marking {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav {
@@ -18,9 +20,14 @@
   display: flex;
 }
 
-.logotype-position {
-  display: inline-block;
-  margin-right: 93px;
+.header-logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotype {
+  display: block;
 }
 
 .logotype__logo {

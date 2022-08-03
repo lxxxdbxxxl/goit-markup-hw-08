@@ -38,6 +38,7 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+  width: 100%;
 }
 
 h1,
@@ -81,7 +82,12 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 320px;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -100,8 +106,11 @@ body {
 
 .header__marking {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+}
+@media screen and (max-width: 767px) {
+  .header__marking {
+    display: none;
+  }
 }
 
 .site-nav {
@@ -114,9 +123,14 @@ body {
   display: flex;
 }
 
-.logotype-position {
-  display: inline-block;
-  margin-right: 93px;
+.header-logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotype {
+  display: block;
 }
 
 .logotype__logo {
@@ -214,6 +228,7 @@ body {
 }
 
 .hero {
+  margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-480.jpg");
   background-repeat: no-repeat;
@@ -808,8 +823,8 @@ body {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 320px;
-  height: 609px;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1112,4 +1127,13 @@ body {
 .portfolio-image {
   display: block;
   width: 100%;
+}
+
+.mobil-btn-open {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  background-color: #fff;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
