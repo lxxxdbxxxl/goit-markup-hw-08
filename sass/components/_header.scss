@@ -2,11 +2,26 @@
   border-bottom: 1px solid #ececec;
 }
 
+.header-position {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .header__marking {
   display: flex;
+  align-items: center;
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 265px;
   }
 }
 
@@ -28,6 +43,8 @@
 
 .logotype {
   display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .logotype__logo {
@@ -101,13 +118,16 @@
 }
 
 .contact {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .contact__list {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
   }
 }
 
